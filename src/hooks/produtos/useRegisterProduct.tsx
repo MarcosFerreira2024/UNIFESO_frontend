@@ -6,7 +6,6 @@ function useRegisterProduct() {
   const [erros, setErros] = React.useState<string | null>(null);
   const [loading, setLoading] = React.useState<boolean | null>(null);
 
-  const navigate = useNavigate();
 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -31,7 +30,9 @@ function useRegisterProduct() {
         const product = await createProduct({ nome,estoque: parseInt(estoque), descricao, preco: parseInt(preco), image });
         if (product instanceof Error) throw new Error(product.message);
 
-        navigate("/dashboard");
+        window.location.reload()
+
+        
       } catch (error) {
         if (error instanceof Error) setErros(error.message);
       } finally {
