@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-rubik: 'Rubik', sans-serif;
+    --color-main: var(--main);
+    --color-main-bg: var(--main-bg);
+    --color-stroke: var(--stroke);
+
+
+    
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+:root {
+    --main:#006B64;
+    --stroke:#00534E;
+    --main-bg:#f4f4f5;
+}
+
+
+.dropShadow {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+ 
