@@ -39,3 +39,7 @@ npm run dev
 ### 4. Abra seu navegador e coloque o localhost
 
 http://localhost:5173/
+
+## Repositório backend
+
+https://github.com/MarcosFerreira2024/UNIFESO_backend_exercicio
